@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="title desc">
+  <title id="title">JINIL.TECH JT emblem</title>
+  <desc id="desc">A circular dark tech emblem with white JT lettering, cyan and violet accents, and sharp lightning cuts.</desc>
+  <defs>
+    <linearGradient id="ring" x1="70" y1="70" x2="440" y2="440" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00E5FF"/>
+      <stop offset="0.55" stop-color="#22B8F5"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="letterAccent" x1="180" y1="160" x2="350" y2="355" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E8F6FF"/>
+    </linearGradient>
+    <radialGradient id="disc" cx="35%" cy="25%" r="85%">
+      <stop offset="0" stop-color="#172435"/>
+      <stop offset="1" stop-color="#070A10"/>
+    </radialGradient>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Original circular JT badge, refined for the dark portfolio theme -->
+  <circle cx="256" cy="256" r="190" fill="url(#disc)" stroke="url(#ring)" stroke-width="5"/>
+  <circle cx="256" cy="256" r="176" fill="none" stroke="#1D2B3B" stroke-width="1.5"/>
+  <!-- Signature angular lightning cuts -->
+  <path d="M73 326 L130 286 L111 318 L145 302 L112 345 L129 320 Z" fill="url(#ring)" filter="url(#softGlow)"/>
+  <path d="M439 185 L382 225 L401 193 L367 209 L400 166 L383 191 Z" fill="url(#ring)" filter="url(#softGlow)"/>
+  <!-- Subtle circuit ticks -->
+  <path d="M256 54 V69 M256 443 V458 M54 256 H69 M443 256 H458" stroke="#00DDF5" stroke-width="3" stroke-linecap="round" opacity=".75"/>
+  <circle cx="256" cy="54" r="4" fill="#00E5FF"/>
+  <circle cx="458" cy="256" r="4" fill="#8B5CF6"/>
+  <!-- Strong, readable JT monogram -->
+  <path d="M168 164 H207 V309 C207 340 188 357 157 357 H126 V321 H153 C163 321 168 316 168 306 Z" fill="url(#letterAccent)"/>
+  <path d="M220 164 H355 V199 H307 V355 H268 V199 H220 Z" fill="url(#letterAccent)"/>
+  <!-- Small cyan/violet highlight to tie into the portfolio gradient -->
+  <path d="M220 164 H355 L346 176 H220 Z" fill="url(#ring)" opacity=".95"/>
+</svg>

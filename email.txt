@@ -1,0 +1,38 @@
+Code ready hai! ✅ Ab tujhe EmailJS account setup karna hoga. Ye ek baar ka kaam hai:
+
+📧 EmailJS Setup — Step by Step
+Step 1: Account Create Karo
+emailjs.com pe jaa aur free account bana (Sign Up)
+Step 2: Email Service Add Karo
+Dashboard mein "Email Services" pe click karo
+"Add New Service" → Gmail choose karo
+Apna Gmail (
+
+jiniltailor06@gmail.com
+) connect karo
+Service ID copy karo (e.g., service_abc123)
+Step 3: Email Template Create Karo
+"Email Templates" pe jaa
+"Create New Template" click karo
+Template mein ye variables use karo:
+Subject: New Portfolio Message from {{from_name}}
+Body:
+Name: {{from_name}}
+Email: {{from_email}}
+Message:
+{{message}}
+Template ID copy karo (e.g., template_xyz789)
+Step 4: Public Key Lo
+Account → General section mein jaa
+Public Key copy karo (e.g., user_abcdef123456)
+Step 5: Code Mein IDs Paste Karo
+
+
+main.js
+ mein ye 3 values replace karo:
+
+js
+const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';     // ← Paste your Public Key
+const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';     // ← Paste your Service ID  
+const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';   // ← Paste your Template ID
+Jab ye 3 IDs daal dega, contact form se bheja hua har message seedha tere Gmail inbox mein aayega! 🎉
